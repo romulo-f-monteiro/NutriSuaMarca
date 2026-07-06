@@ -83,20 +83,6 @@
 </head>
 <body class="antialiased selection:bg-brand-500 selection:text-white">
 
-    <!-- TOP SEO DRAWER (Para o Usuário visualizar as Configurações de SEO) -->
-    <div id="seo-drawer" class="bg-dark-800 border-b border-dark-700 text-xs text-gray-400 py-3 px-4 transition-all duration-300">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-3">
-            <div class="flex items-center gap-2">
-                <span class="bg-brand-500/10 text-brand-500 px-2 py-0.5 rounded font-mono text-[10px]">PRESET SEO</span>
-                <span><strong>URL Amigável:</strong> <code>/aplicativo-personalizado-para-nutricionista</code></span>
-            </div>
-            <div class="flex flex-wrap gap-4 text-[11px]">
-                <span><strong>Meta Title:</strong> Aplicativo Próprio para Nutricionista | Sem Mensalidades & White Label</span>
-                <button onclick="document.getElementById('seo-drawer').remove()" class="text-gray-500 hover:text-white ml-2">✕ Fechar Painel SEO</button>
-            </div>
-        </div>
-    </div>
-
     <!-- HEADER / NAVIGATION -->
     <header class="sticky top-0 z-50 backdrop-blur-lg bg-dark-900/80 border-b border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
@@ -130,8 +116,8 @@
                 <a href="#faq" class="hover:text-brand-500 transition-colors">FAQ</a>
             </nav>
             <div class="flex items-center gap-4">
-                <a href="#oferta" class="hidden sm:inline-flex text-xs text-brand-500 bg-brand-500/10 border border-brand-500/20 rounded-full py-1.5 px-4 font-semibold tracking-wide hover:bg-brand-500/20 transition-all">PAGAMENTO ÚNICO</a>
-                <a href="#oferta" class="bg-brand-500 hover:bg-brand-600 text-dark-900 text-sm font-bold py-2.5 px-5 rounded-xl transition-all shadow-lg shadow-brand-500/25">Quero meu App</a>
+                <span class="hidden sm:inline-flex text-xs text-brand-500 bg-brand-500/10 border border-brand-500/20 rounded-full py-1.5 px-4 font-semibold tracking-wide">PAGAMENTO ÚNICO</span>
+                <button onclick="openPixModal()" class="bg-brand-500 hover:bg-brand-600 text-dark-900 text-sm font-bold py-2.5 px-5 rounded-xl transition-all shadow-lg shadow-brand-500/25">Quero meu App</button>
             </div>
         </div>
     </header>
@@ -183,9 +169,9 @@
 
                     <!-- CTA Principal -->
                     <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 max-w-lg">
-                        <a href="#oferta" class="flex-1 text-center bg-brand-500 hover:bg-brand-600 text-dark-900 font-extrabold py-4 px-8 rounded-2xl transition-all shadow-lg shadow-brand-500/20 hover:scale-[1.02] active:scale-[0.98]">
+                        <button onclick="openPixModal()" class="flex-1 text-center bg-brand-500 hover:bg-brand-600 text-dark-900 font-extrabold py-4 px-8 rounded-2xl transition-all shadow-lg shadow-brand-500/20 hover:scale-[1.02] active:scale-[0.98]">
                             Quero meu Aplicativo
-                        </a>
+                        </button>
                         <a href="#testar" class="text-center border border-white/10 hover:bg-white/5 text-white font-semibold py-4 px-8 rounded-2xl transition-all">
                             Testar Sistema
                         </a>
@@ -649,6 +635,8 @@
     </section>
 
     <!-- SECTION 5: CONHEÇA POR DENTRO (VÍDEO DEMO YOUTUBE) -->
+    <!-- ESTA SEÇÃO FOI COMENTADA CONFORME SOLICITADO E NÃO FICARÁ DISPONÍVEL NA TELA POR ENQUANTO. -->
+    <!-- 
     <section class="py-20 bg-dark-900 border-b border-white/5">
         <div class="max-w-4xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-12">
@@ -657,10 +645,7 @@
                 <p class="text-sm text-gray-400 mt-2">Dê o play e descubra como o sistema funciona no dia a dia do consultório.</p>
             </div>
 
-            <!-- YouTube Video Placeholder Area -->
             <div class="relative w-full aspect-video bg-dark-800 rounded-2xl border border-white/10 overflow-hidden flex items-center justify-center group shadow-2xl">
-                <!-- Comentário: O iframe real do YouTube deve ser posicionado dentro desta div de mockup futuramente. -->
-                <!-- <iframe class="w-full h-full" src="https://www.youtube.com/embed/SEU_VIDEO_ID" frameborder="0" allowfullscreen></iframe> -->
                 
                 <div class="absolute inset-0 bg-cover bg-center opacity-40 blur-xs" style="background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80')"></div>
                 
@@ -674,6 +659,7 @@
             </div>
         </div>
     </section>
+    -->
 
     <!-- SECTION 6: QUER TESTAR AGORA? (DEMO SYSTEM - Sem URLs desnecessárias no texto) -->
     <section id="testar" class="py-20 bg-dark-800 border-b border-white/5 relative">
@@ -718,7 +704,7 @@
         </div>
     </section>
 
-    <!-- SECTION 7: TABELA COMPARATIVA -->
+    <!-- SECTION 7: TABELA COMPARATIVO -->
     <section id="comparativo" class="py-20 md:py-28 bg-dark-900">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             
@@ -757,7 +743,7 @@
                         </tr>
                         <tr>
                             <td class="p-6 text-gray-300">Personalização de Cores Completa</td>
-                            <td class="p-6 text-emerald-400 font-semibold bg-brand-500/5">✔ Sim (Adaptado exatamente ao seu estilo)</td>
+                            <td class="p-6 text-emerald-400 font-semibold bg-brand-500/5">✔ Sim (Adaptado exatamente ao seu style)</td>
                             <td class="p-6 text-gray-500">❌ Estilos e tons engessados padrão</td>
                         </tr>
                         <tr>
@@ -954,7 +940,7 @@
                 <div class="w-24 h-1 bg-gradient-to-r from-brand-500 to-emerald-400 mx-auto my-6 rounded-full"></div>
 
                 <p class="text-gray-300 max-w-xl mx-auto text-sm sm:text-base mb-8 leading-relaxed">
-                    Você investe uma única vez e passa a ter um aplicativo exclusivo com seu nome, sua cor, seu jeito e sua identidade profissional.
+                    Você investe uma única vez e passa a tener um aplicativo exclusivo com seu nome, sua cor, seu jeito e sua identidade profissional.
                 </p>
 
                 <!-- Pricing Container -->
@@ -993,14 +979,13 @@
 
                 <!-- Botão de Compras (CTA Final) -->
                 <div class="space-y-4">
-                    <!-- Espaço reservado para colocar o link definitivo de compra futuramente -->
-                    <a href="#link-de-compra-aqui" class="inline-flex items-center gap-3 bg-brand-500 hover:bg-brand-600 text-dark-900 font-black text-base md:text-lg py-4 px-12 rounded-2xl shadow-xl shadow-brand-500/20 hover:scale-102 active:scale-98 transition-all">
+                    <button onclick="openPixModal()" class="inline-flex items-center gap-3 bg-brand-500 hover:bg-brand-600 text-dark-900 font-black text-base md:text-lg py-4 px-12 rounded-2xl shadow-xl shadow-brand-500/20 hover:scale-102 active:scale-98 transition-all">
                         Quero meu Aplicativo Agora
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                    </a>
+                    </button>
                     
                     <p class="text-xs text-gray-500">
-                        🔒 Pagamento criptografado e seguro com liberação imediata de agendamento.
+                        🔒 Pagamento direto via chave PIX segura com agendamento humano de liberação.
                     </p>
                 </div>
 
@@ -1015,11 +1000,25 @@
             <p class="text-gray-400 max-w-xl mx-auto text-sm sm:text-base mb-8">
                 Transforme sua forma de atender pacientes com um aplicativo adaptado ao seu nome e suas cores pelo criador Rômulo Monteiro.
             </p>
-            <a href="#oferta" class="bg-white hover:bg-gray-100 text-dark-900 font-extrabold text-sm py-3 px-8 rounded-xl transition-all">
+            <button onclick="openPixModal()" class="bg-white hover:bg-gray-100 text-dark-900 font-extrabold text-sm py-3 px-8 rounded-xl transition-all">
                 Garantir Licença Perpétua
-            </a>
+            </button>
         </div>
     </section>
+
+    <!-- TOP SEO DRAWER (Movido do topo para o rodapé do site, focado na exibição dos presets) -->
+    <div id="seo-drawer" class="bg-dark-800 border-t border-b border-dark-700 text-xs text-gray-400 py-4 px-4 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-3">
+            <div class="flex items-center gap-2">
+                <span class="bg-brand-500/10 text-brand-500 px-2 py-0.5 rounded font-mono text-[10px]">PRESET SEO</span>
+                <span><strong>URL Amigável:</strong> <code>/aplicativo-personalizado-para-nutricionista</code></span>
+            </div>
+            <div class="flex flex-wrap gap-4 text-[11px]">
+                <span><strong>Meta Title:</strong> Aplicativo Próprio para Nutricionista | Sem Mensalidades & White Label</span>
+                <button onclick="document.getElementById('seo-drawer').remove()" class="text-gray-500 hover:text-white ml-2">✕ Fechar Painel SEO</button>
+            </div>
+        </div>
+    </div>
 
     <!-- FOOTER -->
     <footer class="bg-dark-900 border-t border-white/5 py-12 text-gray-500 text-sm">
@@ -1052,7 +1051,7 @@
                 <div>
                     <span class="text-xs text-gray-400 uppercase tracking-wider block mb-1">Contato Suporte</span>
                     <a href="mailto:suporte@nutrisuamarca.com.br" class="text-gray-300 hover:text-white block transition-colors">suporte@nutrisuamarca.com.br</a>
-                    <a href="https://wa.me/5500999999999" target="_blank" class="text-gray-300 hover:text-emerald-400 block transition-colors">WhatsApp: (00) 99999-9999</a>
+                    <a href="https://wa.me/5548984724444" target="_blank" class="text-gray-300 hover:text-emerald-400 block transition-colors">WhatsApp: (48) 98472-4444</a>
                 </div>
                 <div>
                     <span class="text-xs text-gray-400 uppercase tracking-wider block mb-1">Criador Responsável</span>
@@ -1182,6 +1181,109 @@
                 icon.innerText = "+";
             }
         }
+
+        // --- SISTEMA DE PAGAMENTO VIA MODAL PIX INTERATIVO ---
+        const pixCode = "00020126580014BR.GOV.BCB.PIX0136ce9a72ec-b22a-4c10-a5f0-05ac8c17b84c5204000053039865406298.905802BR5924ROMULO FERREIRA MONTEIRO6013FLORIANOPOLIS62070503***6304A482";
+
+        function openPixModal() {
+            document.getElementById('pix-modal').classList.remove('hidden');
+            document.body.classList.add('overflow-hidden'); // Lock scroll behind modal
+        }
+
+        function closePixModal() {
+            document.getElementById('pix-modal').classList.add('hidden');
+            document.body.classList.remove('overflow-hidden'); // Unlock scroll
+        }
+
+        function copyPixCode() {
+            // Executando cópia via input temporário devido a restrições de iFrames de navegadores
+            const tempInput = document.createElement("input");
+            tempInput.value = pixCode;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            // Feedback visual no botão copiar
+            const copyBtn = document.getElementById('copy-pix-btn');
+            const originalText = copyBtn.innerHTML;
+            copyBtn.innerHTML = "✓ Copiado com Sucesso!";
+            copyBtn.classList.remove('bg-brand-500', 'hover:bg-brand-600');
+            copyBtn.classList.add('bg-emerald-600', 'text-white');
+            
+            setTimeout(() => {
+                copyBtn.innerHTML = originalText;
+                copyBtn.classList.remove('bg-emerald-600', 'text-white');
+                copyBtn.classList.add('bg-brand-500', 'hover:bg-brand-600');
+            }, 3000);
+        }
     </script>
+
+    <!-- PREMIUM MODAL: DADOS DE COMPRA E PIX -->
+    <div id="pix-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm hidden overflow-y-auto">
+        <div class="relative bg-dark-800 border-2 border-brand-500 rounded-3xl w-full max-w-xl p-6 md:p-8 text-left my-8 shadow-2xl overflow-y-auto max-h-[90vh]">
+            <!-- Botão fechar -->
+            <button onclick="closePixModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl p-2 transition-colors">✕</button>
+            
+            <div class="text-center mb-6">
+                <span class="text-xs bg-brand-500/10 text-brand-500 font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Passo Final de Aquisição</span>
+                <h3 class="text-2xl font-black text-white mt-3">Gere o seu Aplicativo Próprio</h3>
+                <p class="text-xs text-gray-400 mt-1">Siga as instruções simples abaixo para liberar sua videoconferência de instalação e setup.</p>
+            </div>
+
+            <!-- Dados do Vendedor e Valor -->
+            <div class="bg-dark-900 border border-white/5 rounded-2xl p-5 space-y-3.5 mb-6">
+                <div class="flex justify-between items-center pb-2.5 border-b border-white/5">
+                    <span class="text-xs text-gray-400">Valor Único da Licença:</span>
+                    <span class="text-2xl font-black text-emerald-400">R$ 298,99</span>
+                </div>
+                <div>
+                    <span class="text-[10px] text-gray-400 uppercase tracking-widest block font-bold mb-0.5">Identificação do Vendedor</span>
+                    <p class="text-sm font-bold text-white">Rômulo Ferreira Monteiro</p>
+                    <p class="text-xs text-brand-500 font-mono">CRN 10 - 13714 -SC</p>
+                </div>
+            </div>
+
+            <!-- Chave Pix "Copia e Cola" -->
+            <div class="space-y-2 mb-6">
+                <label class="text-xs font-bold text-gray-300 block">Chave PIX Copia e Cola:</label>
+                <div class="relative flex items-center">
+                    <input type="text" readonly value="00020126580014BR.GOV.BCB.PIX0136ce9a72ec-b22a-4c10-a5f0-05ac8c17b84c5204000053039865406298.905802BR5924ROMULO FERREIRA MONTEIRO6013FLORIANOPOLIS62070503***6304A482" 
+                           class="w-full bg-dark-900 border border-white/10 rounded-xl py-3 pl-3 pr-24 text-xs font-mono text-gray-400 focus:outline-none select-all truncate">
+                    <button id="copy-pix-btn" onclick="copyPixCode()" class="absolute right-2 bg-brand-500 hover:bg-brand-600 text-dark-900 font-bold text-[10px] px-3 py-1.5 rounded-lg transition-colors">
+                        Copiar Código
+                    </button>
+                </div>
+                <p class="text-[10px] text-gray-500">Abra o aplicativo de pagamentos do seu banco, escolha a opção "Pix Copia e Cola" e cole o código copiado.</p>
+            </div>
+
+            <!-- Próximo Passo: Enviar no WhatsApp -->
+            <div class="bg-brand-500/10 border border-brand-500/20 rounded-2xl p-5 mb-6 text-xs text-gray-300">
+                <p class="font-bold text-white mb-2 flex items-center gap-2">
+                    <span class="text-base">📲</span> Como liberar sua instalação rápida?
+                </p>
+                <p class="leading-relaxed">
+                    Assim que concluir o pagamento, você precisa enviar o comprovante diretamente pelo WhatsApp para o número <strong class="text-white">(48) 98472-4444</strong>. 
+                    Por lá, realizaremos imediatamente o agendamento da nossa videoconferência de setup e as configurações de personalização!
+                </p>
+                
+                <a href="https://wa.me/5548984724444?text=Ol%C3%A1%20R%C3%B4mulo!%20Realizei%20o%20pagamento%20de%20R$%20298,99%20via%20Pix%20para%20o%20aplicativo%20NutriSuaMarca%20e%20estou%20enviando%20o%20comprovante." 
+                   target="_blank" 
+                   class="inline-flex items-center gap-2 mt-4 bg-emerald-500 hover:bg-emerald-600 text-dark-900 font-extrabold text-xs py-3 px-6 rounded-xl transition-all w-full justify-center">
+                    Enviar Comprovante pelo WhatsApp
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.863-9.736.001-2.599-1.01-5.048-2.85-6.892C16.638 2.131 14.2 1.12 11.62 1.12c-5.44 0-9.866 4.372-9.87 9.739 0 1.708.47 3.374 1.36 4.83l-.995 3.635 3.743-.974z"/></svg>
+                </a>
+            </div>
+
+            <!-- Justificativa Transparência -->
+            <div class="border-t border-white/5 pt-5 text-center">
+                <span class="text-[10px] text-gray-500 uppercase tracking-widest block font-bold mb-1.5">Nossos Valores de Atendimento</span>
+                <p class="text-[11px] text-gray-400 leading-relaxed italic">
+                    "Optamos por este formato de venda direta para garantir a maior transparência possível, conectando você diretamente com o responsável técnico do sistema. Dessa forma, evitamos passar o seu pagamento por intermediários e empresas de terceiros cujas taxas de comissão são elevadíssimas, conseguindo manter este valor especial, acessível e sem nenhuma surpresa!"
+                </p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

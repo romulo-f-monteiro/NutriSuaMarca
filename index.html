@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO METATAGS -->
+    <title>Aplicativo Próprio para Nutricionista | Sem Mensalidades - NutriSuaMarca</title>
+    <meta name="description" content="Tenha o seu próprio Aplicativo para Nutricionista personalizado com sua identidade visual e nome. Plataforma com Software para Acompanhamento Nutricional desenvolvido pelo Nutricionista Rômulo Monteiro. Sem mensalidade, pagamento único!">
+    <meta name="keywords" content="App para Nutricionista, Aplicativo para Nutricionista, Sistema para Nutricionista, Software para Nutricionista, Plataforma para Nutricionistas, Aplicativo personalizado para Nutricionista, App com a marca do nutricionista, Software para acompanhamento nutricional, Aplicativo para pacientes, Aplicativo para consultas nutricionais, Sistema de acompanhamento alimentar, Aplicativo de dieta, Plataforma para pacientes, Aplicativo White Label para Nutricionista">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seudominio.com.br/aplicativo-personalizado-para-nutricionista">
+    <meta property="og:title" content="NutriSuaMarca - Seu Próprio Aplicativo para Nutricionista sem Mensalidades">
+    <meta property="og:description" content="Pare de pagar mensalidades. Tenha seu próprio sistema e aplicativo de dieta para pacientes, personalizado por Rômulo Monteiro com suas cores e marca.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&h=630&q=80">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://seudominio.com.br/aplicativo-personalizado-para-nutricionista">
+    <meta property="twitter:title" content="NutriSuaMarca - Seu Próprio Aplicativo para Nutricionista sem Mensalidades">
+    <meta property="twitter:description" content="Seu aplicativo de dieta personalizado por um preço único de lançamento. Instalação assistida direto por videoconferência.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&h=630&q=80">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            900: '#064e3b',
+                        },
+                        dark: {
+                            900: '#090a0f',
+                            800: '#12141c',
+                            700: '#1e2230',
+                            600: '#2b3044'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Custom Styles & Animations -->
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #090a0f;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+        .text-glow {
+            text-shadow: 0 0 40px rgba(16, 185, 129, 0.2);
+        }
+        .border-glow:hover {
+            box-shadow: 0 0 30px rgba(16, 185, 129, 0.15);
+            border-color: rgba(16, 185, 129, 0.4);
+            transition: all 0.3s ease;
+        }
+        /* Custom Smooth Transitions */
+        .color-transition {
+            transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- TOP SEO DRAWER (Para o Usuário visualizar as Configurações de SEO) -->
+    <div id="seo-drawer" class="bg-dark-800 border-b border-dark-700 text-xs text-gray-400 py-3 px-4 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-3">
+            <div class="flex items-center gap-2">
+                <span class="bg-brand-500/10 text-brand-500 px-2 py-0.5 rounded font-mono text-[10px]">PRESET SEO</span>
+                <span><strong>URL Amigável:</strong> <code>/aplicativo-personalizado-para-nutricionista</code></span>
+            </div>
+            <div class="flex flex-wrap gap-4 text-[11px]">
+                <span><strong>Meta Title:</strong> Aplicativo Próprio para Nutricionista | Sem Mensalidades & White Label</span>
+                <button onclick="document.getElementById('seo-drawer').remove()" class="text-gray-500 hover:text-white ml-2">✕ Fechar Painel SEO</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 backdrop-blur-lg bg-dark-900/80 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <!-- SVG Logo representativo premium: Letra R em círculo de várias cores -->
+                <div class="shrink-0">
+                    <svg class="w-11 h-11" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="40" stroke="url(#multicolorGradient)" stroke-width="8" stroke-linecap="round"/>
+                        <text x="50%" y="64%" font-size="38" font-weight="900" fill="#ffffff" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif">R</text>
+                        <defs>
+                            <linearGradient id="multicolorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#10b981" />
+                                <stop offset="25%" stop-color="#6366f1" />
+                                <stop offset="50%" stop-color="#f43f5e" />
+                                <stop offset="75%" stop-color="#f59e0b" />
+                                <stop offset="100%" stop-color="#10b981" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div>
+                    <span class="text-white font-black text-xl tracking-tight block leading-none">NutriSuaMarca</span>
+                    <span class="text-[9px] text-gray-500 tracking-wider font-semibold">Por Rômulo Monteiro</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#beneficios" class="hover:text-brand-500 transition-colors">Vantagens</a>
+                <a href="#funcionalidades" class="hover:text-brand-500 transition-colors">Funcionalidades</a>
+                <a href="#testar" class="hover:text-brand-500 transition-colors">Testar Sistema</a>
+                <a href="#comparativo" class="hover:text-brand-500 transition-colors">Comparativo</a>
+                <a href="#faq" class="hover:text-brand-500 transition-colors">FAQ</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="#oferta" class="hidden sm:inline-flex text-xs text-brand-500 bg-brand-500/10 border border-brand-500/20 rounded-full py-1.5 px-4 font-semibold tracking-wide hover:bg-brand-500/20 transition-all">PAGAMENTO ÚNICO</a>
+                <a href="#oferta" class="bg-brand-500 hover:bg-brand-600 text-dark-900 text-sm font-bold py-2.5 px-5 rounded-xl transition-all shadow-lg shadow-brand-500/25">Quero meu App</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HERO -->
+    <section class="relative pt-8 pb-20 md:py-24 overflow-hidden border-b border-white/5">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-900/20 via-transparent to-transparent pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Rodapé / Topo Credenciamento Rômulo Monteiro -->
+            <div class="flex justify-start mb-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-gray-300">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                    Criado pelo nutricionista Rômulo Monteiro
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Hero Left Copywriting (Price removed from here, value-first focus) -->
+                <div class="lg:col-span-7 text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-500 font-semibold text-xs mb-6 uppercase tracking-wider animate-pulse">
+                        🔥 Projeto Exclusivo Limitado
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-6 tracking-tight">
+                        O <span class="bg-gradient-to-r from-brand-500 to-emerald-300 bg-clip-text text-transparent">aplicativo</span> que leva o seu nome, sua marca e sua identidade.
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-gray-300 mb-8 font-light leading-relaxed">
+                        Desenvolvido por nutricionista, pensado exclusivamente para nutricionistas. Tenha um <strong class="font-semibold text-white">aplicativo personalizado para nutricionista</strong> totalmente adaptado ao seu nome e suas cores, sem nenhuma mensalidade ou anuidade.
+                    </p>
+
+                    <!-- Benefícios Rápidos Hero -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-8 text-sm">
+                        <div class="flex items-center gap-2 text-gray-300">
+                            <span class="w-2 h-2 rounded-full bg-brand-500 shadow-glow"></span>
+                            Criado por Nutricionista
+                        </div>
+                        <div class="flex items-center gap-2 text-gray-300">
+                            <span class="w-2 h-2 rounded-full bg-brand-500 shadow-glow"></span>
+                            Sua Cor, Seu Nome
+                        </div>
+                        <div class="flex items-center gap-2 text-gray-300">
+                            <span class="w-2 h-2 rounded-full bg-brand-500 shadow-glow"></span>
+                            Pagamento Único
+                        </div>
+                    </div>
+
+                    <!-- CTA Principal -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 max-w-lg">
+                        <a href="#oferta" class="flex-1 text-center bg-brand-500 hover:bg-brand-600 text-dark-900 font-extrabold py-4 px-8 rounded-2xl transition-all shadow-lg shadow-brand-500/20 hover:scale-[1.02] active:scale-[0.98]">
+                            Quero meu Aplicativo
+                        </a>
+                        <a href="#testar" class="text-center border border-white/10 hover:bg-white/5 text-white font-semibold py-4 px-8 rounded-2xl transition-all">
+                            Testar Sistema
+                        </a>
+                    </div>
+                    
+                    <div class="mt-6 flex items-center gap-2 text-sm text-gray-400">
+                        <svg class="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Adquira uma licença única. <strong>Nunca mais pague mensalidade.</strong></span>
+                    </div>
+                </div>
+
+                <!-- Hero Right Interactive Mockup Customizer (Highly Improved Mobile UI) -->
+                <div class="lg:col-span-5 flex flex-col items-center">
+                    <div class="text-center mb-4">
+                        <span class="text-xs text-gray-400 uppercase tracking-widest block mb-2">Simulador Interativo</span>
+                        <p class="text-sm text-gray-300">Escolha a cor da sua clínica para ver a mágica:</p>
+                        
+                        <!-- Color Swatches -->
+                        <div class="flex justify-center gap-3 mt-3">
+                            <button onclick="changeMockupColor('emerald', '#10b981', 'Menta Premium')" class="w-8 h-8 rounded-full bg-emerald-500 border-2 border-white/20 focus:border-white focus:outline-none transition-all hover:scale-110 active:scale-95" title="Menta Premium"></button>
+                            <button onclick="changeMockupColor('indigo', '#6366f1', 'Azul Imperial')" class="w-8 h-8 rounded-full bg-indigo-500 border-2 border-white/20 focus:border-white focus:outline-none transition-all hover:scale-110 active:scale-95" title="Azul Imperial"></button>
+                            <button onclick="changeMockupColor('rose', '#f43f5e', 'Rose Gold')" class="w-8 h-8 rounded-full bg-rose-500 border-2 border-white/20 focus:border-white focus:outline-none transition-all hover:scale-110 active:scale-95" title="Rose Gold"></button>
+                            <button onclick="changeMockupColor('amber', '#f59e0b', 'Âmbar Clínico')" class="w-8 h-8 rounded-full bg-amber-500 border-2 border-white/20 focus:border-white focus:outline-none transition-all hover:scale-110 active:scale-95" title="Âmbar Clínico"></button>
+                            <button onclick="changeMockupColor('slate', '#475569', 'Grafite Moderno')" class="w-8 h-8 rounded-full bg-slate-600 border-2 border-white/20 focus:border-white focus:outline-none transition-all hover:scale-110 active:scale-95" title="Grafite Moderno"></button>
+                        </div>
+                    </div>
+
+                    <!-- Smartphone Mockup Wrapper (Responsive scaling for small screens) -->
+                    <div class="relative w-full max-w-[310px] aspect-[9/19] rounded-[42px] border-[10px] border-dark-600 bg-dark-900 shadow-2xl overflow-hidden shadow-black/80 transition-all duration-300">
+                        <!-- Speaker / Camera Notch -->
+                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-dark-600 rounded-b-2xl z-30 flex items-center justify-center">
+                            <span class="w-12 h-1 bg-dark-900 rounded-full block"></span>
+                        </div>
+
+                        <!-- Inner Smartphone Screen -->
+                        <div class="h-full flex flex-col justify-between pt-10 pb-4 px-4 relative z-20">
+                            <!-- Header Info -->
+                            <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                                <div class="flex items-center gap-1.5">
+                                    <div id="mockup-dot" class="w-6 h-6 rounded-md bg-brand-500 flex items-center justify-center text-[10px] text-dark-900 font-bold color-transition">
+                                        DR
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white text-[11px] font-bold leading-none">Dra. Amanda Melo</h4>
+                                        <span class="text-[8px] text-gray-400">Sua Marca no Celular</span>
+                                    </div>
+                                </div>
+                                <span class="text-[8px] px-2 py-0.5 rounded bg-white/5 border border-white/10 text-gray-300 font-mono">APP ATIVO</span>
+                            </div>
+
+                            <!-- Screen Main Content (Scrollable simulation inside phone) -->
+                            <div class="flex-1 py-3 flex flex-col justify-start overflow-y-auto space-y-2.5 scrollbar-thin">
+                                <p class="text-[9px] text-gray-400 font-bold uppercase tracking-wider">Refeições de Hoje</p>
+                                
+                                <!-- Café da manhã -->
+                                <div id="mockup-card-1" class="bg-white/5 border-l-4 border-brand-500 p-2 rounded-r-lg color-transition">
+                                    <div class="flex justify-between items-center text-[9px] font-bold text-white">
+                                        <span>🍳 Café da Manhã</span>
+                                        <span class="text-gray-400">08:00</span>
+                                    </div>
+                                    <p class="text-[8px] text-gray-300 mt-0.5">Tapioca com ovos + Suco verde.</p>
+                                </div>
+
+                                <!-- Almoço -->
+                                <div id="mockup-card-2" class="bg-white/5 border-l-4 border-brand-500 p-2 rounded-r-lg color-transition">
+                                    <div class="flex justify-between items-center text-[9px] font-bold text-white">
+                                        <span>🍛 Almoço Completo</span>
+                                        <span class="text-gray-400">12:30</span>
+                                    </div>
+                                    <p class="text-[8px] text-gray-300 mt-0.5">Arroz integral, filé de frango grelhado e brócolis cozido.</p>
+                                </div>
+
+                                <p class="text-[9px] text-gray-400 font-bold uppercase tracking-wider">Métricas & Atividades</p>
+
+                                <!-- Progress Circle Mockup (Hidratação) -->
+                                <div class="bg-white/5 rounded-xl p-2 border border-white/5 flex items-center justify-between">
+                                    <div class="flex-1">
+                                        <span class="text-[8px] text-gray-400 block font-semibold">💧 Hidratação diária</span>
+                                        <span class="text-[10px] text-white font-bold block" id="hydration-label">2.2L / 3.0L</span>
+                                    </div>
+                                    <button onclick="addWater()" class="text-[10px] bg-brand-500/20 hover:bg-brand-500/30 text-brand-500 px-2 py-1 rounded font-bold transition-all">
+                                        +300ml
+                                    </button>
+                                </div>
+
+                                <!-- Checkbox: Sono e Atividade Física -->
+                                <div class="bg-white/5 rounded-xl p-2 border border-white/5 space-y-1.5">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-[8px] text-gray-300 font-medium">💤 Dormiu bem? (7h+)</span>
+                                        <input type="checkbox" id="sleep-check" class="accent-brand-500 h-3 w-3 rounded" checked>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-[8px] text-gray-300 font-medium">🏋️ Atividade Física Concluída?</span>
+                                        <input type="checkbox" id="exercise-check" class="accent-brand-500 h-3 w-3 rounded" checked>
+                                    </div>
+                                </div>
+
+                                <!-- Patient Button Mockup -->
+                                <button id="mockup-btn" onclick="triggerMockupCheckin()" class="w-full bg-brand-500 text-dark-900 font-bold text-[9px] py-2.5 rounded-lg shadow-md color-transition">
+                                    Confirmar Check-in do Dia
+                                </button>
+                            </div>
+
+                            <!-- App Bottom Navbar Mockup -->
+                            <div class="border-t border-white/10 pt-2 flex justify-between px-2">
+                                <span class="text-[8px] text-brand-500 font-bold flex flex-col items-center gap-0.5 color-transition">
+                                    <span>🏠</span> Início
+                                </span>
+                                <span class="text-[8px] text-gray-500 flex flex-col items-center gap-0.5">
+                                    <span>🥗</span> Dieta
+                                </span>
+                                <span class="text-[8px] text-gray-500 flex flex-col items-center gap-0.5">
+                                    <span>📈</span> Progresso
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Elegant Background Blur inside phone -->
+                        <div class="absolute inset-0 bg-gradient-to-b from-white/5 via-transparent to-black pointer-events-none z-10"></div>
+                    </div>
+
+                    <!-- Disclaimer explaining personalization -->
+                    <p class="text-xs text-gray-400 mt-4 text-center max-w-[280px]">
+                        💡 O aplicativo exibido é interativo. Altere as cores clicando nas paletas acima para simular a identidade do seu consultório.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: POR QUE TER UM APLICATIVO PRÓPRIO? -->
+    <section id="sobre" class="py-20 md:py-28 bg-dark-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs text-brand-500 font-semibold tracking-widest uppercase block mb-3">Valor Profissional</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
+                    Por que você precisa de um <span class="bg-gradient-to-r from-brand-500 to-emerald-400 bg-clip-text text-transparent">Aplicativo Próprio</span>?
+                </h2>
+                <p class="text-base sm:text-lg text-gray-300 mt-4">
+                    Seus pacientes esperam praticidade e excelência digital. Usar planilhas frias ou sistemas genéricos diminui o seu valor de consulta.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-dark-900 border border-white/5 rounded-2xl p-8 hover:border-brand-500/20 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 flex items-center justify-center text-brand-500 mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Autoridade Instantânea</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Apresentar o seu <strong class="text-gray-300">app com a marca do nutricionista</strong> na primeira consulta eleva o valor percebido do seu atendimento a nível premium.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-dark-900 border border-white/5 rounded-2xl p-8 hover:border-brand-500/20 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 flex items-center justify-center text-brand-500 mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Fidelização e Retenção</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Ao fornecer um <strong class="text-gray-300">aplicativo para pacientes</strong>, você garante que eles permaneçam motivados e acompanhados diariamente, aumentando a retenção.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-dark-900 border border-white/5 rounded-2xl p-8 hover:border-brand-500/20 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 flex items-center justify-center text-brand-500 mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Fortalecimento de Marca</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Pare de divulgar marcas de terceiros. Seu paciente terá em seu celular o seu próprio nome personalizado e a sua identidade profissional refletida.
+                    </p>
+                </div>
+            </div>
+
+            <!-- COMPARATIVO MATEMÁTICO REAL (ROI Card) -->
+            <div class="mt-16 bg-gradient-to-r from-brand-900/40 to-emerald-950/20 border border-brand-500/30 rounded-3xl p-8 md:p-12 relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 w-44 h-44 bg-brand-500/10 rounded-full blur-3xl"></div>
+                <div class="relative z-10 max-w-4xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-8 text-left">
+                            <span class="text-xs text-brand-400 font-extrabold uppercase tracking-widest block mb-2">⚡ Decisão Inteligente</span>
+                            <h3 class="text-2xl md:text-3xl font-black text-white mb-4">Faça as contas de quanto você economiza:</h3>
+                            <p class="text-gray-300 text-sm md:text-base leading-relaxed">
+                                Em média, softwares e apps conhecidos no mercado cobram mensalidades de <strong class="text-white">R$ 79,00 por mês</strong>. Isso equivale a <strong class="text-red-400">R$ 948,00 por ano</strong> em um aplicativo que nunca será seu.
+                            </p>
+                            <p class="text-gray-300 text-sm md:text-base leading-relaxed mt-3">
+                                Com a nossa plataforma, você adquire a sua licença definitiva por uma fração disso. É seu para sempre, sem nenhuma taxa recorrente. <strong class="text-brand-400">Esta não é uma oferta para pensar duas vezes!</strong>
+                            </p>
+                        </div>
+                        <div class="lg:col-span-4 bg-dark-900/90 border border-white/10 rounded-2xl p-6 text-center">
+                            <span class="text-xs text-gray-400 block">Assinaturas comuns:</span>
+                            <span class="text-xl text-red-400 font-bold block line-through mb-4">R$ 948,00 / ano</span>
+                            
+                            <span class="text-xs text-brand-400 font-bold block uppercase tracking-wide">Seu app próprio vitalício:</span>
+                            <span class="text-2xl text-emerald-400 font-black block">Investimento Único</span>
+                            <span class="text-xs text-gray-500 block mt-2">Zero mensalidades eternamente</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: BENEFÍCIOS DO APLICATIVO -->
+    <section id="beneficios" class="py-20 md:py-28 bg-dark-900 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs text-brand-500 font-semibold tracking-widest uppercase block mb-3">Vantagens Exclusivas</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
+                    Tudo que você precisa em uma <span class="bg-gradient-to-r from-brand-500 to-emerald-400 bg-clip-text text-transparent">Licença Vitalícia</span>
+                </h2>
+                <p class="text-sm sm:text-base text-gray-300 mt-3">
+                    Estude as facilidades pensadas para valorizar o seu atendimento de ponta a ponta.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card Benefício 1: Sem Mensalidade -->
+                <div class="bg-dark-800 border border-white/5 rounded-2xl p-6 sm:p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="text-emerald-400 text-2xl mb-4 font-bold">✔ Sem Mensalidades</div>
+                        <h4 class="text-lg font-bold text-white mb-2">Pagamento Único</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            O software para nutricionista e o aplicativo serão seus de forma perpétua. Esqueça taxas fixas recorrentes ou surpresas de cobranças mensais.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card Benefício 2: Identidade do Nutri -->
+                <div class="bg-dark-800 border border-brand-500/20 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-[0_0_15px_rgba(16,185,129,0.05)] relative">
+                    <span class="absolute top-4 right-4 bg-brand-500/10 text-brand-500 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">100% Personalizado</span>
+                    <div>
+                        <div class="text-emerald-400 text-2xl mb-4 font-bold">✔ Estilo Personalizado</div>
+                        <h4 class="text-lg font-bold text-white mb-2">Suas cores e seu nome</h4>
+                        <p class="text-sm text-gray-300 leading-relaxed">
+                            As cores do mockup são apenas de teste. Ajustamos o aplicativo com o seu nome e sua exata paleta de cores institucional de forma limpa.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card Benefício 3: Domínio Customizado -->
+                <div class="bg-dark-800 border border-white/5 rounded-2xl p-6 sm:p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="text-emerald-400 text-2xl mb-4 font-bold">✔ Adicionar Domínio Próprio</div>
+                        <h4 class="text-lg font-bold text-white mb-2">Seu endereço na internet</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Aumente o profissionalismo configurando e adicionando o seu domínio próprio como endereço definitivo de acesso (ex: <code>app.suaclinica.com.br</code>).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card Benefício 4: Fácil de Usar -->
+                <div class="bg-dark-800 border border-white/5 rounded-2xl p-6 sm:p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="text-emerald-400 text-2xl mb-4 font-bold">✔ Interface Simplificada</div>
+                        <h4 class="text-lg font-bold text-white mb-2">Navegação sem barreiras</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Layout leve e descomplicado. Criado sob as diretrizes de design moderno, perfeito para pacientes de qualquer idade usarem de forma fluida.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card Benefício 5: Seguro -->
+                <div class="bg-dark-800 border border-white/5 rounded-2xl p-6 sm:p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="text-emerald-400 text-2xl mb-4 font-bold">✔ Seguro e Protegido</div>
+                        <h4 class="text-lg font-bold text-white mb-2">Infraestrutura em nuvem</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Garantia de segurança e estabilidade dos dados alimentares dos pacientes usando servidores confiáveis da Google.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card Benefício 6: Made by Professional -->
+                <div class="bg-dark-800 border border-white/5 rounded-2xl p-6 sm:p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="text-emerald-400 text-2xl mb-4 font-bold">✔ Sem Complicações de TI</div>
+                        <h4 class="text-lg font-bold text-white mb-2">Instalação assistida</h4>
+                        <p class="text-sm text-gray-400 leading-relaxed">
+                            Você não precisa configurar nada difícil. Fazemos a transferência direta da cópia do sistema em um encontro virtual explicativo passo a passo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DESTAQUE DO CRIADOR / DESENVOLVEDOR (Rômulo Monteiro) -->
+            <div id="criador" class="mt-12 bg-gradient-to-tr from-dark-800 to-dark-700/50 p-8 rounded-3xl border border-white/5 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-full bg-brand-500/10 flex items-center justify-center text-2xl shrink-0 border border-brand-500/20">
+                        👨‍⚕️
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold text-lg">Idealizado por Rômulo Monteiro</h4>
+                        <p class="text-sm text-brand-400 font-medium">Nutricionista Clínico Responsável</p>
+                    </div>
+                </div>
+                <div class="text-sm text-gray-300 md:max-w-md">
+                    <p class="mb-2">"Desenvolvi essa ferramenta especificamente para suprir as lacunas práticas que encontrei na minha rotina de atendimento."</p>
+                    <a href="https://www.instagram.com/romulof.monteiro/" target="_blank" class="inline-flex items-center gap-1.5 text-brand-500 font-bold hover:underline">
+                        Acompanhe no Instagram: @romulof.monteiro
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: O QUE EXISTE DENTRO DO APLICATIVO -->
+    <section id="funcionalidades" class="py-20 md:py-28 bg-dark-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs text-brand-500 font-semibold tracking-widest uppercase block mb-3">Funcionalidades do Sistema</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
+                    Duas interfaces em um só <span class="bg-gradient-to-r from-brand-500 to-emerald-400 bg-clip-text text-transparent">Ecossistema</span>
+                </h2>
+                <p class="text-gray-300 mt-4 text-sm sm:text-base">
+                    Gerencie o consultório de forma unificada. De um lado, a sua plataforma de administração; do outro, o aplicativo do paciente.
+                </p>
+            </div>
+
+            <!-- Tab Container (Vanilla JS Interactive Tabs for Features Showcase) -->
+            <div class="flex justify-center mb-10">
+                <div class="bg-dark-900 border border-white/10 p-1.5 rounded-xl flex gap-1">
+                    <button id="tab-paciente-btn" onclick="switchFeatureTab('paciente')" class="px-5 py-2.5 rounded-lg text-sm font-semibold transition-all bg-brand-500 text-dark-900">
+                        📱 Painel do Paciente
+                    </button>
+                    <button id="tab-nutri-btn" onclick="switchFeatureTab('nutri')" class="px-5 py-2.5 rounded-lg text-sm font-semibold transition-all text-gray-400 hover:text-white">
+                        💻 Painel do Nutricionista
+                    </button>
+                </div>
+            </div>
+
+            <!-- Container das Interfaces -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Interface List of Items (Interactive Text) -->
+                <div class="lg:col-span-6 space-y-4">
+                    
+                    <!-- TAB CONTENT: PACIENTE -->
+                    <div id="features-paciente" class="space-y-4">
+                        <div class="bg-dark-900 p-5 rounded-2xl border border-white/5 hover:border-brand-500/10 transition-all">
+                            <span class="text-brand-500 font-bold mr-2">01.</span>
+                            <strong class="text-white">Minha Dieta & Cardápios</strong>
+                            <p class="text-xs text-gray-400 mt-1">Acesso direto ao plano alimentar detalhado por refeição, com horários, quantidades e fotos de substituições.</p>
+                        </div>
+                        <div class="bg-dark-900 p-5 rounded-2xl border border-white/5 hover:border-brand-500/10 transition-all">
+                            <span class="text-brand-500 font-bold mr-2">02.</span>
+                            <strong class="text-white">Suplementação Inteligente</strong>
+                            <p class="text-xs text-gray-400 mt-1">Módulo para registrar doses recomendadas de vitaminas e ergogênicos com alarmes direto no celular.</p>
+                        </div>
+                        <div class="bg-dark-900 p-5 rounded-2xl border border-white/5 hover:border-brand-500/10 transition-all">
+                            <span class="text-brand-500 font-bold mr-2">03.</span>
+                            <strong class="text-white">Orientações e Receitas</strong>
+                            <p class="text-xs text-gray-400 mt-1">Biblioteca exclusiva de dicas alimentares e receitas fit saudáveis disponibilizadas pelo nutricionista.</p>
+                        </div>
+                        <div class="bg-dark-900 p-5 rounded-2xl border border-white/5 hover:border-brand-500/10 transition-all">
+                            <span class="text-brand-500 font-bold mr-2">04.</span>
+                            <strong class="text-white">Evolução Corporal & Check-ins</strong>
+                            <p class="text-xs text-gray-400 mt-1">Pacientes tiram fotos, inserem peso e medidas e mandam os relatórios para análise rápida em poucos cliques.</p>
+                        </div>
+                    </div>
+
+                    <!-- TAB CONTENT: NUTRI (Initially Hidden) -->
+                    <div id="features-nutri" class="space-y-4 hidden">
+                        <div class="bg-dark-900 p-5 rounded-2xl border border-white/5 hover:border-brand-500/10 transition-all">
+                            <span class="text-brand-500 font-bold mr-2">01.</span>
+                            <strong class="text-white">Agenda Integrada & Consultas</strong>
+                            <p class="text-xs text-gray-400 mt-1">Organize horários e retornos de forma centralizada e acompanhe a assiduidade dos seus pacientes.</p>
+                        </div>
+                        <div class="bg-dark-900 p-5 rounded-2xl border border-white/5 hover:border-brand-500/10 transition-all">
+                            <span class="text-brand-500 font-bold mr-2">02.</span>
+                            <strong class="text-white">Acompanhe o Dia a Dia</strong>
+                            <p class="text-xs text-gray-400 mt-1">Veja em tempo real o histórico de check-ins de água consumida, sono regulado e treinos completados do paciente.</p>
+                        </div>
+                        <div class="bg-dark-900 p-5 rounded-2xl border border-white/5 hover:border-brand-500/10 transition-all">
+                            <span class="text-brand-500 font-bold mr-2">03.</span>
+                            <strong class="text-white">Personalização e Prontuário Avançado</strong>
+                            <p class="text-xs text-gray-400 mt-1">Altere o nome visível do profissional, insira sua rubrica, escolha as cores primárias do sistema e adicione frases motivacionais customizadas para cada paciente.</p>
+                        </div>
+                        <div class="bg-dark-900 p-5 rounded-2xl border border-white/5 hover:border-brand-500/10 transition-all">
+                            <span class="text-brand-500 font-bold mr-2">04.</span>
+                            <strong class="text-white">Banco de Alimentos & Equações GET / VET</strong>
+                            <p class="text-xs text-gray-400 mt-1">Monte dietas rapidamente utilizando fórmulas científicas integradas para cálculo do gasto energético total.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Simulated Application Screenshot Area -->
+                <div class="lg:col-span-6 flex justify-center">
+                    <div class="relative w-full max-w-[450px] bg-dark-900 border border-white/10 rounded-2xl p-6 shadow-2xl overflow-hidden">
+                        <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-brand-500 to-emerald-400"></div>
+                        
+                        <div class="flex items-center justify-between mb-4 pb-4 border-b border-white/5">
+                            <span class="text-xs font-bold text-white uppercase tracking-wider font-mono">Visualização Interna</span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-brand-500 animate-ping"></span>
+                        </div>
+                        
+                        <!-- Dynamic Visual Container (Changes depending on Active Tab) -->
+                        <div id="showcase-box" class="h-[280px] bg-dark-800 rounded-xl p-4 flex flex-col justify-between overflow-y-auto">
+                            <!-- Placeholder content for paciente panel -->
+                            <div id="showcase-content-paciente" class="space-y-3">
+                                <div class="flex justify-between text-xs font-bold text-gray-300">
+                                    <span>🥗 MENU DO PACIENTE</span>
+                                    <span class="text-brand-500">Acesso via celular</span>
+                                </div>
+                                <div class="p-3 rounded-lg bg-dark-900 border border-white/5">
+                                    <span class="text-[10px] text-brand-500 font-bold block">Refeição 2 - Lanche</span>
+                                    <p class="text-xs text-white font-medium">Iogurte Grego + Whey + Castanhas do Pará</p>
+                                </div>
+                                <div class="p-3 rounded-lg bg-dark-900 border border-white/5">
+                                    <span class="text-[10px] text-brand-500 font-bold block">Suplementos de Hoje</span>
+                                    <p class="text-xs text-white font-medium">Creatina Monohidratada 5g + Ômega 3 (2 cápsulas)</p>
+                                </div>
+                            </div>
+
+                            <!-- Placeholder content for nutri panel (hidden first) -->
+                            <div id="showcase-content-nutri" class="space-y-3 hidden">
+                                <div class="flex justify-between text-xs font-bold text-gray-300">
+                                    <span>⚙️ INTERFACE DA CLÍNICA</span>
+                                    <span class="text-brand-500">Controle Completo</span>
+                                </div>
+                                <div class="p-3 rounded-lg bg-dark-900 border border-white/5">
+                                    <span class="text-[10px] text-gray-400 block">Personalização de Exibição</span>
+                                    <p class="text-xs text-white font-bold">Título: Dra. Amanda Melo • Rubrica: [AM]</p>
+                                    <p class="text-[10px] text-emerald-400 mt-1">Frase Ativa: "Sua determinação dita o seu sucesso!"</p>
+                                </div>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <div class="p-2 rounded-lg bg-dark-900 border border-white/5 text-center">
+                                        <span class="text-[9px] text-gray-400 block">Status da Agenda</span>
+                                        <span class="text-xs text-brand-500 font-bold">12 Consultas</span>
+                                    </div>
+                                    <div class="p-2 rounded-lg bg-dark-900 border border-white/5 text-center">
+                                        <span class="text-[9px] text-gray-400 block">Cor do Sistema</span>
+                                        <span class="text-xs text-brand-500 font-bold">#10b981 (Ativa)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Bottom inside Dashboard simulated look -->
+                        <div class="mt-4 pt-4 border-t border-white/5 flex justify-between items-center text-[11px] text-gray-400">
+                            <span>Tecnologia React / Firebase de ponta</span>
+                            <span>Segurança SSL de 256 bits</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: CONHEÇA POR DENTRO (VÍDEO DEMO YOUTUBE) -->
+    <section class="py-20 bg-dark-900 border-b border-white/5">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <span class="text-xs text-brand-500 font-semibold uppercase tracking-widest block mb-2">Vídeo de Demonstração</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-white">Veja a plataforma em ação</h2>
+                <p class="text-sm text-gray-400 mt-2">Dê o play e descubra como o sistema funciona no dia a dia do consultório.</p>
+            </div>
+
+            <!-- YouTube Video Placeholder Area -->
+            <div class="relative w-full aspect-video bg-dark-800 rounded-2xl border border-white/10 overflow-hidden flex items-center justify-center group shadow-2xl">
+                <!-- Comentário: O iframe real do YouTube deve ser posicionado dentro desta div de mockup futuramente. -->
+                <!-- <iframe class="w-full h-full" src="https://www.youtube.com/embed/SEU_VIDEO_ID" frameborder="0" allowfullscreen></iframe> -->
+                
+                <div class="absolute inset-0 bg-cover bg-center opacity-40 blur-xs" style="background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80')"></div>
+                
+                <div class="relative z-10 text-center px-4">
+                    <button class="w-16 h-16 rounded-full bg-brand-500 text-dark-900 flex items-center justify-center mx-auto shadow-xl shadow-brand-500/20 group-hover:scale-110 transition-all duration-300">
+                        <svg class="w-8 h-8 fill-current ml-1" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"/></svg>
+                    </button>
+                    <span class="block mt-4 text-xs text-gray-400 font-bold uppercase tracking-widest">Clique para Assistir</span>
+                    <p class="text-xs text-emerald-400 mt-1 font-mono">[Espaço reservado para o vídeo demonstrativo do sistema]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: QUER TESTAR AGORA? (DEMO SYSTEM - Sem URLs desnecessárias no texto) -->
+    <section id="testar" class="py-20 bg-dark-800 border-b border-white/5 relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-tr from-brand-950/40 to-emerald-950/20 border border-brand-500/30 rounded-3xl p-8 md:p-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    
+                    <div>
+                        <div class="inline-flex items-center gap-1.5 text-[11px] font-bold text-brand-500 uppercase tracking-widest bg-brand-500/10 px-3 py-1 rounded-full mb-4">
+                            ⭐ Teste de Usabilidade Instantâneo
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-black text-white leading-tight">
+                            Antes de comprar, conheça o sistema por dentro.
+                        </h3>
+                        <p class="text-sm text-gray-300 mt-4 leading-relaxed">
+                            Basta clicar no botão <strong>Testar Agora</strong> abaixo e inserir o e-mail de teste para navegar diretamente na interface de demonstração.
+                        </p>
+                        
+                        <div class="mt-6 space-y-2 text-xs bg-dark-900/80 p-4 rounded-xl border border-white/5">
+                            <div class="pt-1">
+                                <span class="text-gray-400 text-[11px]">Utilize este e-mail para acesso demonstrativo:</span>
+                                <p class="text-emerald-400 mt-1 font-mono text-sm"><strong>E-mail de teste:</strong> teste@gmail.com</p>
+                                <p class="text-gray-500 text-[10px] leading-tight mt-1.5">Nota: O acesso serve exclusivamente para você experimentar o ecossistema na prática e entender a excelente fluidez que seus pacientes terão.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="text-center space-y-4">
+                            <span class="text-4xl">👋</span>
+                            <h4 class="text-lg font-bold text-white">Pronto para Testar?</h4>
+                            <p class="text-xs text-gray-400 max-w-xs mx-auto">Clique no botão abaixo para abrir a nossa tela oficial e utilize as credenciais descritas.</p>
+                            <a href="https://nutri-platform-romulo.web.app/" target="_blank" class="inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-dark-900 font-extrabold text-sm py-3.5 px-8 rounded-xl shadow-lg shadow-brand-500/25 transition-all">
+                                Testar Agora
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: TABELA COMPARATIVA -->
+    <section id="comparativo" class="py-20 md:py-28 bg-dark-900">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs text-brand-500 font-semibold tracking-widest uppercase block mb-3">Estudo de Viabilidade</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight">
+                    Por que o nosso modelo de negócio é imbatível?
+                </h2>
+                <p class="text-sm text-gray-400 mt-2">Comparamos a nossa proposta com as tradicionais assinaturas do mercado.</p>
+            </div>
+
+            <div class="overflow-x-auto rounded-2xl border border-white/10 bg-dark-800">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-white/10 bg-dark-900/50">
+                            <th class="p-6 text-sm font-bold text-white">Benefícios e Recursos</th>
+                            <th class="p-6 text-sm font-bold text-brand-500 bg-brand-500/5">NutriSuaMarca</th>
+                            <th class="p-6 text-sm font-bold text-gray-400">Assinaturas do Mercado</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-white/5 text-sm">
+                        <tr>
+                            <td class="p-6 text-gray-300">Custo Mensal Recorrente</td>
+                            <td class="p-6 text-emerald-400 font-semibold bg-brand-500/5">❌ R$ 0,00 (Zero mensalidades)</td>
+                            <td class="p-6 text-red-400">⚠️ R$ 90 a R$ 150 / mês</td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 text-gray-300">Marca Personalizada (Sua Identidade)</td>
+                            <td class="p-6 text-emerald-400 font-semibold bg-brand-500/5">✔ Incluso (Nome e cores de sua preferência)</td>
+                            <td class="p-6 text-gray-500">❌ Logo e nome genérico do sistema deles</td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 text-gray-300">Domínio Próprio</td>
+                            <td class="p-6 text-emerald-400 font-semibold bg-brand-500/5">✔ Incluso (Adicione seu domínio como app.suaclinica.com.br)</td>
+                            <td class="p-6 text-gray-500">❌ Endereço com marca da empresa de assinatura</td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 text-gray-300">Personalização de Cores Completa</td>
+                            <td class="p-6 text-emerald-400 font-semibold bg-brand-500/5">✔ Sim (Adaptado exatamente ao seu estilo)</td>
+                            <td class="p-6 text-gray-500">❌ Estilos e tons engessados padrão</td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 text-gray-300">Fidelização a Longo Prazo</td>
+                            <td class="p-6 text-emerald-400 font-semibold bg-brand-500/5">✔ Extrema (Seu ecossistema único)</td>
+                            <td class="p-6 text-gray-500">⚠️ Média (O paciente muda com facilidade)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 text-gray-300">Retorno sobre o Investimento</td>
+                            <td class="p-6 text-emerald-400 font-semibold bg-brand-500/5">⚡ Rápido (Menos de 1/3 do custo anual de outros apps)</td>
+                            <td class="p-6 text-gray-500">❌ Custo infinito acumulado ao longo dos anos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Warning Callout below Table -->
+            <p class="text-xs text-gray-500 text-center mt-4">
+                * Os dados de mercado correspondem à média cobrada pelas grandes empresas de softwares de nutrição no Brasil.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- SECTION 8: DEPOIMENTOS (PREPARADO PARA PROVAS SOCIAIS) -->
+    <section id="depoimentos" class="py-20 md:py-28 bg-dark-800 border-t border-white/5 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs text-brand-500 font-semibold tracking-widest uppercase block mb-3">Feedback Real</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight">
+                    O que dizem os primeiros profissionais integrados
+                </h2>
+                <p class="text-sm text-gray-400 mt-2">Nutricionistas que transformaram suas marcas no ecossistema digital.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testemunho 1 -->
+                <div class="bg-dark-900 border border-white/5 rounded-2xl p-8 flex flex-col justify-between">
+                    <p class="text-sm text-gray-300 leading-relaxed italic">
+                        "Estava cansada de pagar mensalidades caras por sistemas onde o paciente nem sequer lembrava do meu nome. Agora, meus pacientes amam o app com as minhas cores e nome no celular deles."
+                    </p>
+                    <div class="flex items-center gap-3 mt-6 pt-6 border-t border-white/5">
+                        <div class="w-10 h-10 rounded-full bg-brand-500/20 text-white flex items-center justify-center font-bold">
+                            DF
+                        </div>
+                        <div>
+                            <h4 class="text-white text-sm font-bold">Dra. Fernanda L.</h4>
+                            <span class="text-[11px] text-gray-400 block">Nutrição Clínica & Esportiva</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testemunho 2 -->
+                <div class="bg-dark-900 border border-white/5 rounded-2xl p-8 flex flex-col justify-between">
+                    <p class="text-sm text-gray-300 leading-relaxed italic">
+                        "Investi apenas uma vez na taxa de adesão e configurei com minhas cores pretas e douradas. Pareço uma clínica de luxo do futuro. O sistema criado pelo Rômulo é excelente e economiza muito."
+                    </p>
+                    <div class="flex items-center gap-3 mt-6 pt-6 border-t border-white/5">
+                        <div class="w-10 h-10 rounded-full bg-brand-500/20 text-white flex items-center justify-center font-bold">
+                            DR
+                        </div>
+                        <div>
+                            <h4 class="text-white text-sm font-bold">Dr. Ricardo Macedo</h4>
+                            <span class="text-[11px] text-gray-400 block">Emagrecimento Saudável</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testemunho 3 -->
+                <div class="bg-dark-900 border border-white/5 rounded-2xl p-8 flex flex-col justify-between">
+                    <p class="text-sm text-gray-300 leading-relaxed italic">
+                        "Meus pacientes elogiam muito a facilidade de mandar as fotos de evolução diretamente pelo painel do paciente. Economizo horas de atendimento pelo WhatsApp e centralizo tudo."
+                    </p>
+                    <div class="flex items-center gap-3 mt-6 pt-6 border-t border-white/5">
+                        <div class="w-10 h-10 rounded-full bg-brand-500/20 text-white flex items-center justify-center font-bold">
+                            DK
+                        </div>
+                        <div>
+                            <h4 class="text-white text-sm font-bold">Dra. Karla Souza</h4>
+                            <span class="text-[11px] text-gray-400 block">Nutrição Integrativa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 9: PERGUNTAS FREQUENTES (FAQ) -->
+    <section id="faq" class="py-20 md:py-28 bg-dark-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            
+            <div class="text-center mb-16">
+                <span class="text-xs text-brand-500 font-semibold tracking-widest uppercase block mb-3">Tire Suas Dúvidas</span>
+                <h2 class="text-3xl font-black text-white tracking-tight">Perguntas Frequentes</h2>
+                <p class="text-sm text-gray-400 mt-2">Consulte as principais respostas sobre o seu aplicativo personalizado para nutricionista.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-white/10 rounded-xl overflow-hidden bg-dark-800">
+                    <button class="w-full text-left p-6 font-bold text-white flex justify-between items-center hover:bg-white/5 focus:outline-none" onclick="toggleFaq(1)">
+                        <span>O aplicativo é realmente meu?</span>
+                        <span id="faq-icon-1" class="text-brand-500 transition-transform font-bold text-xl">+</span>
+                    </button>
+                    <div id="faq-ans-1" class="hidden p-6 pt-0 border-t border-white/5 text-sm text-gray-400 leading-relaxed">
+                        Sim, 100%! O sistema é licenciado para você de forma vitalícia. Ele rodará em seu domínio e com seu nome e cores definidos, servindo como uma solução legítima adaptada à sua marca.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-white/10 rounded-xl overflow-hidden bg-dark-800">
+                    <button class="w-full text-left p-6 font-bold text-white flex justify-between items-center hover:bg-white/5 focus:outline-none" onclick="toggleFaq(2)">
+                        <span>Preciso pagar alguma mensalidade futura?</span>
+                        <span id="faq-icon-2" class="text-brand-500 transition-transform font-bold text-xl">+</span>
+                    </button>
+                    <div id="faq-ans-2" class="hidden p-6 pt-0 border-t border-white/5 text-sm text-gray-400 leading-relaxed">
+                        Não, absolutamente nada. O pagamento é feito uma única vez e garante o seu acesso permanente, sem taxas extras ou de manutenção oculta.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-white/10 rounded-xl overflow-hidden bg-dark-800">
+                    <button class="w-full text-left p-6 font-bold text-white flex justify-between items-center hover:bg-white/5 focus:outline-none" onclick="toggleFaq(3)">
+                        <span>Consigo mudar as cores e o nome visível?</span>
+                        <span id="faq-icon-3" class="text-brand-500 transition-transform font-bold text-xl">+</span>
+                    </button>
+                    <div id="faq-ans-3" class="hidden p-6 pt-0 border-t border-white/5 text-sm text-gray-400 leading-relaxed">
+                        Com certeza. No momento da instalação estruturada, o sistema é configurado com seu nome profissional de preferência, rubrica e a paleta de cores institucional que melhor representa o seu consultório.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-white/10 rounded-xl overflow-hidden bg-dark-800">
+                    <button class="w-full text-left p-6 font-bold text-white flex justify-between items-center hover:bg-white/5 focus:outline-none" onclick="toggleFaq(4)">
+                        <span>Como funciona o processo de entrega e instalação?</span>
+                        <span id="faq-icon-4" class="text-brand-500 transition-transform font-bold text-xl">+</span>
+                    </button>
+                    <div id="faq-ans-4" class="hidden p-6 pt-0 border-t border-white/5 text-sm text-gray-400 leading-relaxed">
+                        <p class="mb-2"><strong>A liberação não é instantânea ou automática por robôs.</strong> Como o sistema foi desenvolvido pelo próprio nutricionista Rômulo Monteiro para garantir máxima personalização, o processo ocorre de forma humana e segura:</p>
+                        <ol class="list-decimal pl-4 space-y-1">
+                            <li>Após confirmar a compra, você agenda um horário exclusivo.</li>
+                            <li>Nos encontramos em uma reunião virtual via Google Meet.</li>
+                            <li>O Rômulo Monteiro instala e faz a transferência da cópia do sistema diretamente para você.</li>
+                            <li>Para essa instalação, precisaremos do seu e-mail pessoal ou um criado exclusivamente para essa finalidade administrativa. Ele te explicará exatamente como usar tudo.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="border border-white/10 rounded-xl overflow-hidden bg-dark-800">
+                    <button class="w-full text-left p-6 font-bold text-white flex justify-between items-center hover:bg-white/5 focus:outline-none" onclick="toggleFaq(5)">
+                        <span>Preciso saber programar ou mexer com TI?</span>
+                        <span id="faq-icon-5" class="text-brand-500 transition-transform font-bold text-xl">+</span>
+                    </button>
+                    <div id="faq-ans-5" class="hidden p-6 pt-0 border-t border-white/5 text-sm text-gray-400 leading-relaxed">
+                        De forma alguma! Você não mexe em uma única linha de código. Entregamos a plataforma prontinha, explicada pessoalmente na chamada de vídeo de ponta a ponta.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="border border-white/10 rounded-xl overflow-hidden bg-dark-800">
+                    <button class="w-full text-left p-6 font-bold text-white flex justify-between items-center hover:bg-white/5 focus:outline-none" onclick="toggleFaq(6)">
+                        <span>Os meus pacientes conseguem usar de forma simples?</span>
+                        <span id="faq-icon-6" class="text-brand-500 transition-transform font-bold text-xl">+</span>
+                    </button>
+                    <div id="faq-ans-6" class="hidden p-6 pt-0 border-t border-white/5 text-sm text-gray-400 leading-relaxed">
+                        Sim! Ele foi planejado estruturalmente como um aplicativo leve que funciona instantaneamente em iPhones e celulares Android sem encher a memória do aparelho do paciente, permitindo o uso imediato de forma fluida.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 10: OFERTA (PREMIUM BOX) -->
+    <section id="oferta" class="py-20 md:py-28 bg-dark-800 border-t border-white/5 relative">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand-900/10 via-transparent to-transparent pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="bg-gradient-to-b from-dark-900 to-dark-900 border-2 border-brand-500 rounded-[32px] p-8 md:p-14 text-center relative shadow-2xl shadow-brand-500/10">
+                
+                <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-brand-500 text-dark-900 font-extrabold text-xs px-6 py-2 rounded-full uppercase tracking-widest shadow-lg">
+                    🔥 Oferta Especial de Lançamento
+                </div>
+
+                <p class="text-sm text-brand-500 font-bold uppercase tracking-widest mt-4">Acesso Vitalício & Customizável</p>
+                <h3 class="text-3xl sm:text-5xl font-black text-white mt-4 mb-6 leading-tight">
+                    Tenha o Seu Aplicativo de Nutrição
+                </h3>
+
+                <!-- Divisor Decorativo -->
+                <div class="w-24 h-1 bg-gradient-to-r from-brand-500 to-emerald-400 mx-auto my-6 rounded-full"></div>
+
+                <p class="text-gray-300 max-w-xl mx-auto text-sm sm:text-base mb-8 leading-relaxed">
+                    Você investe uma única vez e passa a ter um aplicativo exclusivo com seu nome, sua cor, seu jeito e sua identidade profissional.
+                </p>
+
+                <!-- Pricing Container -->
+                <div class="bg-dark-800 max-w-md mx-auto p-8 rounded-2xl border border-white/5 mb-8 text-center">
+                    <span class="text-sm text-gray-500 line-through">De R$ 799,90</span>
+                    <div class="text-4xl sm:text-5xl font-black text-white mt-1 mb-2">
+                        R$ 298,99
+                    </div>
+                    <span class="text-xs text-brand-500 font-bold uppercase tracking-widest bg-brand-500/10 px-3 py-1 rounded-full">Taxa Única • Sem Mensalidade</span>
+                    
+                    <div class="mt-6 space-y-2 border-t border-white/5 pt-4 text-xs text-gray-400 text-left">
+                        <div class="flex items-center gap-2">
+                            <span class="text-brand-500">✔</span> Pagamento Único, Sem Mensalidades
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-brand-500">✔</span> Adaptação ao seu Nome, Estilo e Cores
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-brand-500">✔</span> Possibilidade de Adicionar seu Domínio Próprio
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-brand-500">✔</span> Instalação Assistida por Google Meet
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Processo de Entrega Explicado de Forma Clara -->
+                <div class="max-w-md mx-auto bg-white/5 border border-white/10 rounded-xl p-4 text-left mb-8 text-xs text-gray-300">
+                    <p class="font-bold text-white mb-1.5 flex items-center gap-1.5">
+                        <span>👋</span> Como funciona a Instalação?
+                    </p>
+                    <p class="leading-relaxed">
+                        Logo após a compra, nós agendaremos uma videoconferência no Meet. O próprio nutricionista Rômulo Monteiro fará a instalação e a transferência de propriedade na sua máquina de forma assistida. Você só precisa fornecer o seu e-mail de preferência ou criar um para essa finalidade!
+                    </p>
+                </div>
+
+                <!-- Botão de Compras (CTA Final) -->
+                <div class="space-y-4">
+                    <!-- Espaço reservado para colocar o link definitivo de compra futuramente -->
+                    <a href="#link-de-compra-aqui" class="inline-flex items-center gap-3 bg-brand-500 hover:bg-brand-600 text-dark-900 font-black text-base md:text-lg py-4 px-12 rounded-2xl shadow-xl shadow-brand-500/20 hover:scale-102 active:scale-98 transition-all">
+                        Quero meu Aplicativo Agora
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                    
+                    <p class="text-xs text-gray-500">
+                        🔒 Pagamento criptografado e seguro com liberação imediata de agendamento.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL SECTION -->
+    <section class="py-16 bg-dark-900 border-t border-white/5 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Leve sua marca para outro nível.</h2>
+            <p class="text-gray-400 max-w-xl mx-auto text-sm sm:text-base mb-8">
+                Transforme sua forma de atender pacientes com um aplicativo adaptado ao seu nome e suas cores pelo criador Rômulo Monteiro.
+            </p>
+            <a href="#oferta" class="bg-white hover:bg-gray-100 text-dark-900 font-extrabold text-sm py-3 px-8 rounded-xl transition-all">
+                Garantir Licença Perpétua
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark-900 border-t border-white/5 py-12 text-gray-500 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            
+            <div class="flex items-center gap-3">
+                <div class="shrink-0">
+                    <svg class="w-8 h-8" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="40" stroke="url(#multicolorGradientFooter)" stroke-width="8"/>
+                        <text x="50%" y="64%" font-size="38" font-weight="900" fill="#ffffff" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif">R</text>
+                        <defs>
+                            <linearGradient id="multicolorGradientFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#10b981" />
+                                <stop offset="25%" stop-color="#6366f1" />
+                                <stop offset="50%" stop-color="#f43f5e" />
+                                <stop offset="75%" stop-color="#f59e0b" />
+                                <stop offset="100%" stop-color="#10b981" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div>
+                    <span class="text-white font-bold block leading-none text-base">NutriSuaMarca</span>
+                    <span class="text-[10px] uppercase tracking-widest text-gray-400">Desenvolvido por Rômulo Monteiro</span>
+                </div>
+            </div>
+
+            <!-- Redes Sociais e Contato -->
+            <div class="flex flex-col sm:flex-row gap-6 text-center sm:text-left">
+                <div>
+                    <span class="text-xs text-gray-400 uppercase tracking-wider block mb-1">Contato Suporte</span>
+                    <a href="mailto:suporte@nutrisuamarca.com.br" class="text-gray-300 hover:text-white block transition-colors">suporte@nutrisuamarca.com.br</a>
+                    <a href="https://wa.me/5500999999999" target="_blank" class="text-gray-300 hover:text-emerald-400 block transition-colors">WhatsApp: (00) 99999-9999</a>
+                </div>
+                <div>
+                    <span class="text-xs text-gray-400 uppercase tracking-wider block mb-1">Criador Responsável</span>
+                    <a href="https://www.instagram.com/romulof.monteiro/" target="_blank" class="text-brand-500 font-semibold block hover:underline">Instagram: @romulof.monteiro</a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-white/5 text-center text-xs text-gray-600">
+            <p>© 2026 NutriSuaMarca. Todos os direitos reservados. Marcas, nomenclaturas e layouts customizados sob responsabilidade do cliente.</p>
+        </div>
+
+        <!-- LISTA DE PALAVRAS CHAVE ESCONDIDAS PARA SEO (Indexáveis para buscadores mas invisíveis na tela) -->
+        <div class="sr-only" aria-hidden="true">
+            App para Nutricionista, Aplicativo para Nutricionista, Sistema para Nutricionista, Software para Nutricionista, Plataforma para Nutricionistas, Aplicativo personalizado para Nutricionista, App com a marca do nutricionista, Software para acompanhamento nutricional, Aplicativo para pacientes, Aplicativo para consultas nutricionais, Sistema de acompanhamento alimentar, Aplicativo de dieta, Plataforma para pacientes, Aplicativo White Label para Nutricionista, Rômulo Monteiro Nutricionista, aplicativo sem mensalidade nutricionista.
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT LOGIC -->
+    <script>
+        // Variáveis de estado do mockup
+        let currentWater = 2.2;
+        
+        // Função do Simulador Interativo de Cores
+        function changeMockupColor(colorName, hexValue, colorTitle) {
+            const dot = document.getElementById('mockup-dot');
+            const card1 = document.getElementById('mockup-card-1');
+            const card2 = document.getElementById('mockup-card-2');
+            const btn = document.getElementById('mockup-btn');
+            
+            // Alterando as cores dos elementos do celular de acordo com o clique
+            dot.style.backgroundColor = hexValue;
+            card1.style.borderColor = hexValue;
+            card2.style.borderColor = hexValue;
+            btn.style.backgroundColor = hexValue;
+            
+            // Adicionando transição de contraste para botões específicos
+            if (colorName === 'rose' || colorName === 'amber' || colorName === 'emerald') {
+                btn.style.color = '#090a0f'; // Texto escuro em cores claras
+                dot.style.color = '#090a0f';
+            } else {
+                btn.style.color = '#ffffff'; // Texto claro em cores escuras
+                dot.style.color = '#ffffff';
+            }
+        }
+
+        // Adiciona água interativamente no mockup do telefone
+        function addWater() {
+            currentWater = parseFloat((currentWater + 0.3).toFixed(1));
+            if (currentWater > 5.0) currentWater = 1.0; // Reset just for fun
+            document.getElementById('hydration-label').innerText = `${currentWater}L / 3.0L`;
+        }
+
+        // Trigger de confirmação de check-in fictício no mockup do telefone
+        function triggerMockupCheckin() {
+            const isExerciseChecked = document.getElementById('exercise-check').checked;
+            const isSleepChecked = document.getElementById('sleep-check').checked;
+            
+            let message = "Check-in enviado com sucesso!";
+            if (isExerciseChecked && isSleepChecked) {
+                message = "🎉 Excelente! Sono em dia e Treino concluído com sucesso!";
+            } else {
+                message = "👍 Registro diário salvo com sucesso!";
+            }
+            
+            // Create a custom temporary alert block on phone mockup
+            const btn = document.getElementById('mockup-btn');
+            const originalText = btn.innerText;
+            btn.innerText = message;
+            btn.style.opacity = '0.9';
+            
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.style.opacity = '1';
+            }, 3000);
+        }
+
+        // Função do Alternador de Abas de Funcionalidades
+        function switchFeatureTab(tabName) {
+            const tabPacienteBtn = document.getElementById('tab-paciente-btn');
+            const tabNutriBtn = document.getElementById('tab-nutri-btn');
+            const pacienteDiv = document.getElementById('features-paciente');
+            const nutriDiv = document.getElementById('features-nutri');
+            
+            const showPacienteContent = document.getElementById('showcase-content-paciente');
+            const showNutriContent = document.getElementById('showcase-content-nutri');
+
+            if (tabName === 'paciente') {
+                // Altera Botões
+                tabPacienteBtn.className = "px-5 py-2.5 rounded-lg text-sm font-semibold transition-all bg-brand-500 text-dark-900";
+                tabNutriBtn.className = "px-5 py-2.5 rounded-lg text-sm font-semibold transition-all text-gray-400 hover:text-white";
+                
+                // Exibe Listagem
+                pacienteDiv.classList.remove('hidden');
+                nutriDiv.classList.add('hidden');
+                
+                // Exibe Mockup Visual correspondente
+                showPacienteContent.classList.remove('hidden');
+                showNutriContent.classList.add('hidden');
+            } else {
+                // Altera Botões
+                tabNutriBtn.className = "px-5 py-2.5 rounded-lg text-sm font-semibold transition-all bg-brand-500 text-dark-900";
+                tabPacienteBtn.className = "px-5 py-2.5 rounded-lg text-sm font-semibold transition-all text-gray-400 hover:text-white";
+                
+                // Exibe Listagem
+                nutriDiv.classList.remove('hidden');
+                pacienteDiv.classList.add('hidden');
+
+                // Exibe Mockup Visual correspondente
+                showNutriContent.classList.remove('hidden');
+                showPacienteContent.classList.add('hidden');
+            }
+        }
+
+        // Função do Acordeon do FAQ
+        function toggleFaq(index) {
+            const ans = document.getElementById(`faq-ans-${index}`);
+            const icon = document.getElementById(`faq-icon-${index}`);
+            
+            if (ans.classList.contains('hidden')) {
+                ans.classList.remove('hidden');
+                icon.innerText = "−";
+                icon.classList.add('text-brand-500');
+            } else {
+                ans.classList.add('hidden');
+                icon.innerText = "+";
+            }
+        }
+    </script>
+</body>
+</html>
